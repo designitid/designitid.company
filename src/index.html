@@ -1,0 +1,802 @@
+<html>
+  <head>
+    <title>designitid - web developing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+
+      .hover-animate:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease-in-out;
+      }
+    </style>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body
+    class="bg-gradient-to-r from-white via-blue-50 to-white dark:from-gray-800 dark:via-gray-900 dark:to-gray-800 text-gray-900 dark:text-white"
+  >
+    <nav
+      class="flex items-center justify-between p-4 bg-white shadow dark:bg-gray-900 animate-customFadeIn"
+      id="navbar"
+    >
+      <div class="flex items-center space-x-4">
+        <img
+          alt="designitid"
+          class="h-8"
+          height="100"
+          src="img/notyet.png"
+          width="40"
+        />
+        <span class="text-xl font-bold text-gray-900 dark:text-white">
+          designitid
+        </span>
+      </div>
+      <div class="hidden md:flex items-center space-x-4">
+        <a class="text-blue-500 dark:text-blue-400" href="#section1">
+          Project and Work Experience
+        </a>
+        <span class="text-gray-500 dark:text-gray-400"> · </span>
+        <a class="text-blue-500 dark:text-blue-400" href="#section2">
+          Developer
+        </a>
+      </div>
+      <div class="hidden md:flex items-center space-x-4">
+        <a class="text-gray-700 dark:text-gray-300" href="#docs"> Pricing </a>
+        <a class="text-gray-700 dark:text-gray-300" href="#contact">
+          Contact Us
+        </a>
+        <a class="text-gray-700 dark:text-gray-300" href="#blog"> Blog </a>
+        <a class="text-gray-700 dark:text-gray-300" href="#subscribe">
+          Subscribe
+        </a>
+        <button class="text-gray-700 dark:text-gray-300" id="theme-toggle">
+          <i class="fas fa-sun" id="theme-toggle-icon"> </i>
+        </button>
+      </div>
+      <div class="md:hidden flex items-center">
+        <button
+          class="text-gray-700 dark:text-gray-300"
+          id="mobile-menu-button"
+        >
+          <i class="fas fa-bars"> </i>
+        </button>
+      </div>
+    </nav>
+    <div class="hidden md:hidden" id="mobile-menu">
+      <div
+        class="flex flex-col items-center space-y-4 p-4 bg-white dark:bg-gray-900"
+      >
+        <a class="text-blue-500 dark:text-blue-400" href="#section1">
+          Introducing Catalyst
+        </a>
+        <a class="text-blue-500 dark:text-blue-400" href="#section2">
+          A modern application UI kit for React
+        </a>
+        <a class="text-gray-700 dark:text-gray-300" href="#docs"> Docs </a>
+        <a class="text-gray-700 dark:text-gray-300" href="#contact">
+          contact
+        </a>
+        <a class="text-gray-700 dark:text-gray-300" href="#blog"> Blog </a>
+        <a class="text-gray-700 dark:text-gray-300" href="#showcase">
+          Showcase
+        </a>
+        <button
+          class="text-gray-700 dark:text-gray-300"
+          id="mobile-theme-toggle"
+        >
+          <i class="fas fa-sun" id="mobile-theme-toggle-icon"> </i>
+        </button>
+      </div>
+    </div>
+    <div
+      class="container mx-auto px-4 py-16 flex flex-col lg:flex-row items-center justify-between"
+    >
+      <div class="lg:w-1/2">
+        <h1 class="text-5xl font-black leading-tight mb-4">
+          The Art and Science
+          <br />
+          of Crafting
+          <br />
+          Wonderful Website
+        </h1>
+        <div class="flex items-center mb-4">
+          <img
+            alt="Person 1"
+            class="w-10 h-10 rounded-full border-2 border-white -ml-2"
+            height="40"
+            src="https://storage.googleapis.com/a1aa/image/VKQ3DQ2NzS7gEdjqftu0pUqkmz0C5nTsaoes8UQ8eC7VGYHnA.jpg"
+            width="40"
+          />
+          <img
+            alt="Person 2"
+            class="w-10 h-10 rounded-full border-2 border-white -ml-2"
+            height="40"
+            src="https://storage.googleapis.com/a1aa/image/H8a9rlrycxpdBV7ENOxOah8qrxQ6f3toErFCxbfoBf0OGYHnA.jpg"
+            width="40"
+          />
+          <img
+            alt="Person 3"
+            class="w-10 h-10 rounded-full border-2 border-white -ml-2"
+            height="40"
+            src="https://storage.googleapis.com/a1aa/image/u9Vx3ptDWsbBL1oDH3tevY2VEGYB1sjzHarFNgfplfoTGYHnA.jpg"
+            width="40"
+          />
+        </div>
+        <p class="text-lg mb-6">
+          Transforming ideas into stellar designs requires a dynamic blend of
+          creativity, technical expertise, and user-focused thinking.
+        </p>
+        <button
+          class="bg-gray-900 text-white px-6 py-3 rounded-full text-lg font-semibold mb-8"
+        >
+          Discover
+        </button>
+        <div class="space-y-4">
+          <div class="flex items-center">
+            <i class="fas fa-clock text-xl mr-4"> </i>
+            <div>
+              <h3 class="text-lg font-semibold">Trendy</h3>
+              <p class="text-sm text-gray-600">We Follow The latest trends</p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <i class="fas fa-globe text-xl mr-4"> </i>
+            <div>
+              <h3 class="text-lg font-semibold">Responsive Design</h3>
+              <p class="text-sm text-gray-600">Visit anytime with Any Device</p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <i class="fas fa-shopping-cart text-xl mr-4"> </i>
+            <div>
+              <h3 class="text-lg font-semibold">Business</h3>
+              <p class="text-sm text-gray-600">
+                Promoting your business never been this easy!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/2 mt-12 lg:mt-0 relative">
+        <div class="relative">
+          <img
+            alt="Team working on a laptop"
+            class="rounded-3xl"
+            height="500"
+            src="https://storage.googleapis.com/a1aa/image/UyjsANe8DO0Td6Pics5fy4kak5J21Qg1Usbe1MtKxSgNGYHnA.jpg"
+            width="400"
+          />
+          <button
+            class="absolute bottom-4 left-4 bg-yellow-400 text-gray-900 px-4 py-2 rounded-full font-semibold"
+          >
+            <i class="fas fa-play mr-2"> </i>
+            Our Team
+          </button>
+          <div
+            class="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2"
+          ></div>
+        </div>
+        <div
+          class="absolute bottom-0 right-0 bg-gray-900 text-white p-6 rounded-xl shadow-lg"
+        >
+          <h3 class="text-lg font-semibold mb-4">TESTIMONIALS</h3>
+          <div class="mb-2">
+            <p class="text-sm">UX Designs</p>
+            <div class="w-full bg-gray-700 rounded-full h-2.5 mb-2">
+              <div
+                class="bg-blue-500 h-2.5 rounded-full"
+                style="width: 90%"
+              ></div>
+            </div>
+            <p class="text-sm">90+</p>
+          </div>
+          <div class="mb-2">
+            <p class="text-sm">Business projects</p>
+            <div class="w-full bg-gray-700 rounded-full h-2.5 mb-2">
+              <div
+                class="bg-yellow-400 h-2.5 rounded-full"
+                style="width: 80%"
+              ></div>
+            </div>
+            <p class="text-sm">80+</p>
+          </div>
+          <div>
+            <p class="text-sm">Innovative solutions</p>
+            <div class="w-full bg-gray-700 rounded-full h-2.5 mb-2">
+              <div
+                class="bg-gray-400 h-2.5 rounded-full"
+                style="width: 90%"
+              ></div>
+            </div>
+            <p class="text-sm">90+</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="text-center py-20" id="section1">
+      <h1 class="text-5xl font-bold text-gray-900 dark:text-white">
+        Transform Your Online Presence <br />with designitid
+      </h1>
+      <p class="mt-4 text-lg text-gray-600 dark:text-gray-400">
+        Expert Web Development Solutions to Elevate Your Business
+      </p>
+    </main>
+    <div class="max-w-6xl mx-auto p-6 bg-white rounded-lg shadow-lg">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <div class="md:w-1/2">
+          <p class="text-blue-600 font-semibold">Start With Us!</p>
+          <h1 class="text-5xl font-bold mt-2">
+            Build your idea even faster with us!.
+          </h1>
+          <p class="text-gray-600 mt-4">
+            Beautifully designed, expertly crafted website, built by designitid.
+            The perfect starting point for you.
+          </p>
+          <div class="mt-6 flex space-x-4">
+            <button class="bg-black text-white px-4 py-2 rounded-lg">
+              Projects
+            </button>
+            <button
+              class="border border-gray-300 text-gray-700 px-4 py-2 rounded-lg"
+            >
+              Explore
+            </button>
+          </div>
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0">
+          <div class="bg-white p-4 rounded-lg shadow-lg">
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center space-x-4">
+                <img
+                  alt="Profile picture of Leonard Krasner"
+                  class="w-10 h-10 rounded-full"
+                  src="https://storage.googleapis.com/a1aa/image/Yj8cxl5tFb6ZG5z50ILmxzPws8aI02i5GdsZy87wQ1SBe1xJA.jpg"
+                  width="40"
+                  height="40"
+                />
+                <div>
+                  <p class="font-semibold">Dani Anto Pakpahan</p>
+                  <p class="text-gray-500">CEO</p>
+                </div>
+              </div>
+              <button
+                class="border border-gray-300 text-gray-700 px-4 py-2 rounded-lg"
+              >
+                View
+              </button>
+            </div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center space-x-4">
+                <img
+                  alt="Profile picture of Floyd Miles"
+                  class="w-10 h-10 rounded-full"
+                  src="https://storage.googleapis.com/a1aa/image/r912vKDjpDqZHB0eDAtQzTB3nIZC2uC9fZcUwOCULpqI4rjTA.jpg"
+                  width="40"
+                  height="40"
+                />
+                <div>
+                  <p class="font-semibold">Christian Smith</p>
+                  <p class="text-gray-500">Project Manager</p>
+                </div>
+              </div>
+              <button
+                class="border border-gray-300 text-gray-700 px-4 py-2 rounded-lg"
+              >
+                View
+              </button>
+            </div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center space-x-4">
+                <img
+                  alt="Profile picture of Emily Selman"
+                  class="w-10 h-10 rounded-full"
+                  src="https://storage.googleapis.com/a1aa/image/k4TUmFSLXVLMEZV9eqEpxyCeGG7Eq0wZLcKpNM33RFsG4rjTA.jpg"
+                  width="40"
+                  height="40"
+                />
+                <div>
+                  <p class="font-semibold">Emily Selman</p>
+                  <p class="text-gray-500">Lead Designer</p>
+                </div>
+              </div>
+              <button
+                class="border border-gray-300 text-gray-700 px-4 py-2 rounded-lg"
+              >
+                View
+              </button>
+            </div>
+            <button
+              class="w-full border border-gray-300 text-gray-700 px-4 py-2 rounded-lg"
+            >
+              View all
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section
+      class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4 px-4 my-10"
+      id="section2"
+    >
+      <div class="w-full md:w-1/3 flex justify-center">
+        <img
+          alt="Screenshot of a website introducing GPT-4"
+          class="rounded-lg shadow-lg"
+          height="200"
+          src="https://storage.googleapis.com/a1aa/image/ocafeSb6a4rRwkhmKHSVfs1N5WxCOw5Ny9tI00wVS8qcEUHnA.jpg"
+          width="300"
+        />
+      </div>
+      <div class="w-full md:w-1/3 flex justify-center">
+        <img
+          alt="Screenshot of a dashboard with graphs and statistics"
+          class="rounded-lg shadow-lg"
+          height="200"
+          src="https://storage.googleapis.com/a1aa/image/e9SdSuZaUegHFEEjCwTtVdZuqPVLH0b9WX6hwkj78fPSEUHnA.jpg"
+          width="300"
+        />
+      </div>
+      <div class="w-full md:w-1/3 flex justify-center">
+        <img
+          alt="Screenshot of a global commerce platform website"
+          class="rounded-lg shadow-lg"
+          height="200"
+          src="https://storage.googleapis.com/a1aa/image/sn9hGf2xwPRLWKKKWZWd0KGglwkxi14sGzfg4bRnQFDLCqjTA.jpg"
+          width="300"
+        />
+      </div>
+    </section>
+    <div class="max-w-7xl mx-auto px-4 py-16">
+      <div class="text-center mb-12">
+        <h1 class="text-4xl font-bold mb-4">
+          Now is the time to build your portfolio.
+        </h1>
+        <p class="text-lg text-gray-600">
+          With typical market returns, you have to start young to secure your
+          future.<br />With Pocket, it’s never too late to build your nest egg.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-external-link-alt text-2xl text-gray-500"></i>
+          </div>
+          <h2 class="text-xl font-semibold mb-2">Invest any amount</h2>
+          <p class="text-gray-600">
+            Whether it’s $1 or $1,000,000, we can put your money to work for
+            you.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-file-alt text-2xl text-gray-500"></i>
+          </div>
+          <h2 class="text-xl font-semibold mb-2">Build a balanced portfolio</h2>
+          <p class="text-gray-600">
+            Invest in different industries to find the most opportunities to win
+            huge.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-clock text-2xl text-gray-500"></i>
+          </div>
+          <h2 class="text-xl font-semibold mb-2">Trade in real-time</h2>
+          <p class="text-gray-600">
+            Get insider tips on big stock moves and act on them within seconds.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-users text-2xl text-gray-500"></i>
+          </div>
+          <h2 class="text-xl font-semibold mb-2">Profit from your network</h2>
+          <p class="text-gray-600">
+            Invite new insiders to get tips faster and beat even other Pocket
+            users.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-lock text-2xl text-gray-500"></i>
+          </div>
+          <h2 class="text-xl font-semibold mb-2">Encrypted and anonymized</h2>
+          <p class="text-gray-600">
+            Cutting-edge security technology that even the NSA doesn’t know
+            about keeps you hidden.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-chart-line text-2xl text-gray-500"></i>
+          </div>
+          <h2 class="text-xl font-semibold mb-2">Portfolio tracking</h2>
+          <p class="text-gray-600">
+            Watch your investments grow exponentially, leaving other investors
+            in the dust.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section class="py-20 text-center" id="docs">
+      <h1 class="text-4xl font-bold text-gray-900 dark:text-white">
+        Simple pricing, for everyone
+      </h1>
+      <div class="text-center py-12 px-4">
+        <p class="text-gray-400 mt-2">
+          It doesn’t matter what size your business is, our software won’t work
+          well for you.
+        </p>
+      </div>
+      <div
+        class="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8 px-4"
+      >
+        <!-- Starter Plan -->
+        <div
+          class="bg-white text-gray-900 p-8 rounded-lg text-center w-full md:w-80 hover-animate"
+        >
+          <div class="text-4xl font-bold">$9</div>
+          <div class="text-xl font-semibold mt-2">Starter</div>
+          <p class="text-gray-600 mt-2">
+            Good for anyone who is self-employed and just getting started.
+          </p>
+          <button
+            class="mt-6 bg-transparent border border-gray-500 text-gray-900 py-2 px-4 rounded-full"
+          >
+            Get started
+          </button>
+          <ul class="text-left mt-6 space-y-2">
+            <li>
+              <i class="fas fa-check-circle text-blue-500"></i> Send 10 quotes
+              and invoices
+            </li>
+            <li>
+              <i class="fas fa-check-circle text-blue-500"></i> Connect up to 2
+              bank accounts
+            </li>
+            <li>
+              <i class="fas fa-check-circle text-blue-500"></i> Track up to 15
+              expenses per month
+            </li>
+            <li>
+              <i class="fas fa-check-circle text-blue-500"></i> Manual payroll
+              support
+            </li>
+            <li>
+              <i class="fas fa-check-circle text-blue-500"></i> Export up to 3
+              reports
+            </li>
+          </ul>
+        </div>
+        <!-- Small Business Plan -->
+        <div
+          class="bg-blue-600 text-white p-8 rounded-lg text-center w-full md:w-80 hover-animate"
+        >
+          <div class="text-4xl font-bold">$15</div>
+          <div class="text-xl font-semibold mt-2">Small business</div>
+          <p class="text-gray-200 mt-2">
+            Perfect for small / medium sized businesses.
+          </p>
+          <button class="mt-6 bg-white text-blue-600 py-2 px-4 rounded-full">
+            Get started
+          </button>
+          <ul class="text-left mt-6 space-y-2">
+            <li>
+              <i class="fas fa-check-circle text-white"></i> Send 25 quotes and
+              invoices
+            </li>
+            <li>
+              <i class="fas fa-check-circle text-white"></i> Connect up to 5
+              bank accounts
+            </li>
+            <li>
+              <i class="fas fa-check-circle text-white"></i> Track up to 50
+              expenses per month
+            </li>
+            <li>
+              <i class="fas fa-check-circle text-white"></i> Automated payroll
+              support
+            </li>
+            <li>
+              <i class="fas fa-check-circle text-white"></i> Export up to 12
+              reports
+            </li>
+            <li>
+              <i class="fas fa-check-circle text-white"></i> Bulk reconcile
+              transactions
+            </li>
+            <li>
+              <i class="fas fa-check-circle text-white"></i> Track in multiple
+              currencies
+            </li>
+          </ul>
+        </div>
+        <!-- Enterprise Plan -->
+        <div
+          class="bg-white text-gray-900 p-8 rounded-lg text-center w-full md:w-80 hover-animate"
+        >
+          <div class="text-4xl font-bold">$39</div>
+          <div class="text-xl font-semibold mt-2">Enterprise</div>
+          <p class="text-gray-600 mt-2">
+            For even the biggest enterprise companies.
+          </p>
+          <button
+            class="mt-6 bg-transparent border border-gray-500 text-gray-900 py-2 px-4 rounded-full"
+          >
+            Get started
+          </button>
+          <ul class="text-left mt-6 space-y-2">
+            <li>
+              <i class="fas fa-check-circle text-blue-500"></i> Send unlimited
+              quotes and invoices
+            </li>
+            <li>
+              <i class="fas fa-check-circle text-blue-500"></i> Connect up to 15
+              bank accounts
+            </li>
+            <li>
+              <i class="fas fa-check-circle text-blue-500"></i> Track up to 200
+              expenses per month
+            </li>
+            <li>
+              <i class="fas fa-check-circle text-blue-500"></i> Automated
+              payroll support
+            </li>
+            <li>
+              <i class="fas fa-check-circle text-blue-500"></i> Export up to 25
+              reports, including TPS
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="py-20 text-center" id="blog">
+      <h2 class="text-4xl font-bold text-gray-900 dark:text-white">Blog</h2>
+      <p class="mt-4 text-lg text-gray-600 dark:text-gray-400">
+        Read the latest articles and tutorials on Tailwind CSS.
+      </p>
+      <div class="max-w-7xl mx-auto py-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div class="bg-white rounded-lg shadow-lg p-6">
+            <div class="flex justify-center">
+              <img
+                alt="Figma icon templates"
+                class="rounded-lg"
+                height="150"
+                src="https://storage.googleapis.com/a1aa/image/st0sYSykVZZ4FdH4f0B6Go5h40uiiteQtEaGcdEX30f7GdHnA.jpg"
+                width="300"
+              />
+            </div>
+            <h3 class="text-xl font-semibold text-center mt-4">
+              Figma icon templates
+            </h3>
+            <p class="text-gray-500 text-center mt-2">
+              Pefectly structured templates for quickly designing new icons at
+              dozens of common sizes.
+            </p>
+          </div>
+          <!-- Card 2 -->
+          <div class="bg-white rounded-lg shadow-lg p-6">
+            <div class="flex justify-center">
+              <img
+                alt="Weekly icon teardowns"
+                class="rounded-lg"
+                height="150"
+                src="https://storage.googleapis.com/a1aa/image/3W5sBnIsFUr3F5OSNqtz6Ra277B0f5CACcznlP0BsrAuR3xJA.jpg"
+                width="300"
+              />
+            </div>
+            <h3 class="text-xl font-semibold text-center mt-4">
+              Weekly icon teardowns
+            </h3>
+            <p class="text-gray-500 text-center mt-2">
+              Weekly videos where we dissect and recreate beautiful icons we
+              find on the web.
+            </p>
+          </div>
+          <!-- Card 3 -->
+          <div class="bg-white rounded-lg shadow-lg p-6">
+            <div class="flex justify-center">
+              <img
+                alt="Community of icon designers"
+                class="rounded-lg"
+                height="150"
+                src="https://storage.googleapis.com/a1aa/image/FeQTk1uW94Twf0VvVmHfx64r3lziMJMANdFWTQ5y5AP9GdHnA.jpg"
+                width="300"
+              />
+            </div>
+            <h3 class="text-xl font-semibold text-center mt-4">
+              Community of icon designers
+            </h3>
+            <p class="text-gray-500 text-center mt-2">
+              A private Discord server where you can get help and give feedback
+              on each others' work.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-20 text-center" id="Contact Us">
+      <h2 class="text-4xl font-bold text-gray-900 dark:text-white">
+        Contact Us
+      </h2>
+      <p class="mt-4 text-lg text-gray-600 dark:text-gray-400">
+        Send us Email!
+      </p>
+      <div
+        class="bg-gradient-to-r from-blue-100 to-blue-200 p-10 rounded-3xl shadow-lg max-w-4xl mx-auto"
+      >
+        <div class="flex flex-col md:flex-row items-center justify-between">
+          <div class="text-center md:text-left mb-6 md:mb-0">
+            <h1 class="text-4xl font-bold text-blue-900">Stay up to date</h1>
+            <p class="text-lg text-blue-800 mt-2">
+              Get updates on all of our events and be the first to get notified
+              when tickets go on sale.
+            </p>
+          </div>
+          <div class="flex flex-col items-center md:items-end">
+            <p class="text-blue-900 mb-2">
+              Sign up to our newsletter <i class="fas fa-arrow-down"></i>
+            </p>
+            <div class="flex">
+              <input
+                type="email"
+                placeholder="Email address"
+                class="p-3 w-48 md:w-64 rounded-l-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <button
+                class="bg-blue-600 text-white p-3 rounded-r-lg hover:bg-blue-700 transition duration-300"
+              >
+                Sign up today
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-white dark:bg-gray-900 py-8">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="flex items-center space-x-4">
+            <img
+              alt="Tailwind CSS Logo"
+              class="h-8"
+              height="40"
+              src="tambah nanti.jpg"
+              width="40"
+            />
+            <span class="text-xl font-bold text-gray-900 dark:text-white">
+              designitid
+            </span>
+          </div>
+          <div class="flex space-x-4 mt-4 md:mt-0">
+            <a class="text-gray-700 dark:text-gray-300" href="#pricing">
+              Pricing
+            </a>
+            <a class="text-gray-700 dark:text-gray-300" href="#components">
+              Contact Us
+            </a>
+            <a class="text-gray-700 dark:text-gray-300" href="#blog"> Blog </a>
+            <a class="text-gray-700 dark:text-gray-300" href="#showcase">
+              Subscribe
+            </a>
+          </div>
+        </div>
+        <div class="flex justify-center mt-4">
+          <a class="text-gray-700 dark:text-gray-300 mx-2" href="#">
+            <i class="fab fa-twitter"> </i>
+          </a>
+          <a class="text-gray-700 dark:text-gray-300 mx-2" href="#">
+            <i class="fab fa-facebook"> </i>
+          </a>
+          <a class="text-gray-700 dark:text-gray-300 mx-2" href="#">
+            <i class="fab fa-github"> </i>
+          </a>
+          <a class="text-gray-700 dark:text-gray-300 mx-2" href="#">
+            <i class="fab fa-linkedin"> </i>
+          </a>
+        </div>
+        <div class="text-center text-gray-700 dark:text-gray-300 mt-4">
+          &copy; 2024 Dani Anto Pakpahan. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <script>
+      const themeToggleBtn = document.getElementById("theme-toggle");
+      const themeToggleIcon = document.getElementById("theme-toggle-icon");
+      const mobileThemeToggleBtn = document.getElementById(
+        "mobile-theme-toggle"
+      );
+      const mobileThemeToggleIcon = document.getElementById(
+        "mobile-theme-toggle-icon"
+      );
+      const body = document.body;
+      const navbar = document.getElementById("navbar");
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      themeToggleBtn.addEventListener("click", () => {
+        body.classList.toggle("dark");
+        if (body.classList.contains("dark")) {
+          themeToggleIcon.classList.remove("fa-sun");
+          themeToggleIcon.classList.add("fa-moon");
+          mobileThemeToggleIcon.classList.remove("fa-sun");
+          mobileThemeToggleIcon.classList.add("fa-moon");
+          body.style.background =
+            "linear-gradient(to right, #2d3748, #1a202c, #2d3748)";
+          navbar.style.background = "#1a202c";
+          document
+            .querySelectorAll("a")
+            .forEach((el) => el.classList.add("text-white"));
+          document
+            .querySelectorAll("span")
+            .forEach((el) => el.classList.add("text-white"));
+        } else {
+          themeToggleIcon.classList.remove("fa-moon");
+          themeToggleIcon.classList.add("fa-sun");
+          mobileThemeToggleIcon.classList.remove("fa-moon");
+          mobileThemeToggleIcon.classList.add("fa-sun");
+          body.style.background =
+            "linear-gradient(to right, #ffffff, #ebf8ff, #ffffff)";
+          navbar.style.background = "#ffffff";
+          document
+            .querySelectorAll("a")
+            .forEach((el) => el.classList.remove("text-white"));
+          document
+            .querySelectorAll("span")
+            .forEach((el) => el.classList.remove("text-white"));
+        }
+      });
+
+      mobileThemeToggleBtn.addEventListener("click", () => {
+        body.classList.toggle("dark");
+        if (body.classList.contains("dark")) {
+          themeToggleIcon.classList.remove("fa-sun");
+          themeToggleIcon.classList.add("fa-moon");
+          mobileThemeToggleIcon.classList.remove("fa-sun");
+          mobileThemeToggleIcon.classList.add("fa-moon");
+          body.style.background =
+            "linear-gradient(to right, #2d3748, #1a202c, #2d3748)";
+          navbar.style.background = "#1a202c";
+          document
+            .querySelectorAll("a")
+            .forEach((el) => el.classList.add("text-white"));
+          document
+            .querySelectorAll("span")
+            .forEach((el) => el.classList.add("text-white"));
+        } else {
+          themeToggleIcon.classList.remove("fa-moon");
+          themeToggleIcon.classList.add("fa-sun");
+          mobileThemeToggleIcon.classList.remove("fa-moon");
+          mobileThemeToggleIcon.classList.add("fa-sun");
+          body.style.background =
+            "linear-gradient(to right, #ffffff, #ebf8ff, #ffffff)";
+          navbar.style.background = "#ffffff";
+          document
+            .querySelectorAll("a")
+            .forEach((el) => el.classList.remove("text-white"));
+          document
+            .querySelectorAll("span")
+            .forEach((el) => el.classList.remove("text-white"));
+        }
+      });
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
